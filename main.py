@@ -83,11 +83,10 @@ import os.path
 from pathlib import Path
 sitemap_path = os.path.join(str(Path.home()),"sitemap.xml")
 
-print("SimpleCrawler will be stored to: " + str(sitemap_path))
+print("Sitemap will be stored to: " + str(sitemap_path))
 with open(sitemap_path, "w") as file:
     file.write('<?xml version="1.0" encoding="UTF-8"?>\n\t<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
     crawl(url,file)
     file.write('</urlset>')
 
-#### I know the XML is broken, didn't manage to fix it in time, spec said no more than 2 hours work on this.
-#### But TBH I am terrible with XML.....
+#### I know the XML is broken, didn't manage to fix it in time, sorry
