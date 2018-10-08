@@ -88,5 +88,4 @@ with open(sitemap_path, "w") as file:
     file.write('<?xml version="1.0" encoding="UTF-8"?>\n\t<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
     crawl(url,file)
     file.write('</urlset>')
-
-#### I know the XML is broken, didn't manage to fix it in time, sorry
+# Issues with XML do not use !
